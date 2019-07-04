@@ -47,4 +47,18 @@ int sum(struct fraction f1,struct fraction f2, struct fraction *res,int lcm)
 
 void output(struct fraction res)
 {
--- INSERT --           
+                  {
+        printf("Sum of two fraction is:%d/%d",res.num,res.den);
+}
+
+
+ int main()
+{
+        struct fraction f1,f2,res;
+        int lcm=0;
+        getinput(&f1,&f2);
+        sum(f1,f2,&res,lcm);
+        output(res);
+}
+
+
